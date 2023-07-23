@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import Home from './pages/Home';
 import './App.css';
+import './BurgerMenuStyles.css'
+import DropBox from './pages/DropBox';
+import AboutUs from './pages/AboutUs';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="outer-container">
+      <Home />
+      <main id="page-wrap" className="App">
+        <DropBox />
+        <AboutUs />
+      </main> 
     </div>
   );
 }
